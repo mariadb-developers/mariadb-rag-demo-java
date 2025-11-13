@@ -1,6 +1,6 @@
 CREATE OR REPLACE TABLE objects (
 	name VARCHAR(50),
-	embedding BLOB NOT NULL DEFAULT 0,
+	embedding VECTOR NOT NULL DEFAULT 0,
 	VECTOR INDEX embedding_idx (embedding)
 );
 
